@@ -15,20 +15,18 @@ resource "aws_instance" "example" {
     Name = "Hello-mine"
   }
 }
-resource "aws_instance" "example" 
+resource "aws_instance" "example -1" 
   ami           = "ami-000ec6c25978d5999"
   instance_type = "t2.micro"
-  key_name      = "linux-keypair"
-
-  tags = {
+    tags = {
     Name = "Hello-mine-2"
   }
  
- resource "aws_instance" "example" 
+ resource "aws_instance" "example-2" 
   ami           = "ami-000ec6c25978d5999"
   instance_type = "t2.micro"
-  key_name      = "linux-keypair"
+
 
   tags = {
-    Name = "Hello-mine-2"
+    Name = "my-ec2"
   } 
